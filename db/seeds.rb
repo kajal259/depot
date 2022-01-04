@@ -21,5 +21,10 @@ From novices to experts, chatbots are an area in which everyone
 can participate. Exercise your creativity by creating chatbot
 skills for communicating, information, and fun.
 </p>},
-image_url: 'dpchat.jpg',
+image_url: 'dpchatt.jpeg',
 price: 20.00)
+
+#. . . 
+Product.create!(title: "xlcvbnb", description: "sdafgthyujtkilokjnhbv", image_url: "b.jpeg", price: 0.22e2,)
+
+# . . .
