@@ -14,69 +14,105 @@
  *= require_self
  */
 
-body {
-	margin: 0;
-	padding: 0;
+ body {
+  margin: 0;
+  padding: 0;
 }
 header.main {
-	text-align: center; // center on mobile
-	@media (min-width: 30em) {
-	  text-align: left; // left align on desktop
+  text-align: center;
+  @media (min-width: 30em) {
+    text-align: left; 
   }
-	background: #282;
-	margin: 0;
-	h1 {
-	  display: none;
-	}
+  background: #282;
+  margin: 0;
+  h1 {
+    display: none;
+  }
+}
+.content nav ul {
+  list-style: none;
 }
 .content {
-	margin-right: 0;
-	padding-right: 0;
-	display: flex;
-	display: -webkit-flex;
-	flex-direction: column; // mobile is horizontally laid out
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	@media (min-width: 30em) {
-	  flex-direction: row; // desktop is vertically laid out
-	  -webkit-box-orient: horizontal;
-	}
-nav {
-	padding-bottom: 1em;
-	background: rgb(27, 95, 27);
-	text-align: center; // mobile has centered nav
-	@media (min-width: 30em) {
-  	text-align: left; // desktop nav is left-aligned
-	  padding: 1em; // and needs more padding
-	}
-	ul {
-	  list-style: none;
-	  margin: 0;
-	  padding: 0;
-	  @media (min-width: 30em) {
-	    padding-right: 1em; // give desktop some extra space
-	  }
-	li {
-	  margin: 0;
-	  padding: 0.5em;
-	  text-transform: capitalize;
-	  letter-spacing: 0em;
-	a {
-	  color: black;
-	  text-decoration: none;
-	}
-	a:hover {
-	  background: none;
-	  color: white;
-	}
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column; 
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+
+  @media (min-width: 30em) {
+    flex-direction: row; 
+    -webkit-box-orient: horizontal;
+  }
+  .notice, #notice {
+    background: #ffb;
+    border-radius: 0.5em;
+    border: solid 0.177em rgb(9, 105, 14);
+    color: rgb(16, 97, 6);
+    font-weight: bold;
+    margin-bottom: 1em;
+    padding: 1em 1.414em;
+    text-align: center;
+  }
+  #cart {
+    article {
+      h2 {
+        margin-top: 0;
+				display: block;
+				font-size: 1.5em;
+				margin-block-start: 0.83em;
+				margin-block-end: 0.83em;
+				margin-inline-start: 0px;
+				margin-inline-end: 0px;
+				font-weight: bold;
+      }
+      background: #bfb;
+      border-radius: 0.5em;
+      margin: 1em;
+      padding: 1.414em;
+      @media (min-width: 30em) {
+        margin: 0;
+      }
+    }
+  }             
+  nav {
+    padding-bottom: 1em;
+    background: #141;
+    text-align: center;
+    @media (min-width: 30em) {
+      text-align: left; 
+      padding: 1em;
+      padding-block-end: 10em;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+        @media (min-width: 30em) {
+          padding-right: lem;
+      }
+      li {
+        margin: 0;
+        padding: 0.5em;
+        text-transform: capitalize;
+        letter-spacing: 0em;
+        a {
+          color: #bfb;
+          text-decoration: none;
+        }
+        a:hover {
+          background: none;
+          color: white;
+        }
+      }
+    }
+  }
+  main {
+    padding: 8.5em;
+    margin-right: -97em;
+    margin-top: -17em;
+    margin-bottom: 12em;
+  }
 }
-}
-}
-	main {
-	// padding-right: 15em;
-  	// padding-left: 10em ;
-  	margin-right: -86em;
-  	margin-top: -10em;
-  	margin-bottom: 10em;
-	}
-	}
