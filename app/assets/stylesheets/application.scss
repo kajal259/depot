@@ -14,7 +14,7 @@
  *= require_self
  */
 
- body {
+body {
   margin: 0;
   padding: 0;
 }
@@ -60,17 +60,10 @@ header.main {
     article {
       h2 {
         margin-top: 0;
-				display: block;
-				font-size: 1.5em;
-				margin-block-start: 0.83em;
-				margin-block-end: 0.83em;
-				margin-inline-start: 0px;
-				margin-inline-end: 0px;
-				font-weight: bold;
       }
-      background: #bfb;
+      background: white;
       border-radius: 0.5em;
-      margin: 1em;
+      margin: lem;
       padding: 1.414em;
       @media (min-width: 30em) {
         margin: 0;
@@ -84,7 +77,6 @@ header.main {
     @media (min-width: 30em) {
       text-align: left; 
       padding: 1em;
-      padding-block-end: 10em;
     }
     ul {
       list-style: none;
@@ -96,8 +88,8 @@ header.main {
       li {
         margin: 0;
         padding: 0.5em;
-        text-transform: capitalize;
-        letter-spacing: 0em;
+        text-transform: uppercase;
+        letter-spacing: 0.354em;
         a {
           color: #bfb;
           text-decoration: none;
@@ -110,9 +102,81 @@ header.main {
     }
   }
   main {
-    padding: 8.5em;
-    margin-right: -97em;
-    margin-top: -17em;
-    margin-bottom: 12em;
+    padding: 0.5em;
+  }
+}
+.depot_form {
+  padding: 0 1em;
+  h1 {
+    font-size: 1.99em;
+    line-height: 1.41em;
+    margin-bottom: 0.5em;
+    padding: 0;
+  }
+  .field, .actions {
+    margin-bottom: 0.5em;
+    padding: 0;
+  }
+  .actions {
+    text-align: right;
+    padding: 1em 0;
+  }
+  input, textarea, select, option {
+    border: solid thin #888;
+    box-sizing: border-box;
+    font-size: 1em;
+    padding: 0.5em;
+    width: 100%;
+  }
+  label {
+    padding: 0.5em 0;
+  }
+  input[type="submit"] {
+    background-color: #bfb;
+    border-radius: 0.354em;
+    border: solid thin #888;
+    color: black;
+    font-size: 1.41em;
+    font-weight: bold;
+    padding: 0.354em 1em;
+  }
+  input[type="submit"]:hover {
+    background-color: #9d9;
+  }
+  #error_explanation {
+    background-color: white;
+    border-radius: 1em;
+    border: solid thin red;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    width: 100%;
+    h2 {
+      background: none;
+      color: red;
+      font-size: 1.41em;
+      line-height: 1.41em;
+      padding: 1em;
+    }
+    ul {
+      margin-top: 0;
+      li {
+        color: red;
+        font-size: 1em;
+      }
+    }
+  }
+  .field_with_errors {
+    background: none;
+    color: red;
+    width: 100%;
+    label {
+      font-weight: bold;
+    }
+    label::before {
+      content: "! ";
+    }
+    input,textarea {
+      background: pink;
+    }
   }
 }

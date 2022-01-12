@@ -15,12 +15,14 @@ class LineItemsControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should create line_item" do
+  test "should create line_item via ajax" do
     assert_difference('LineItem.count') do
-      post line_items_url, params: { product_id: products(:ruby).id }
+      post line_items_url, params: { product_id: products(:ruby).id },
+      xhr: true
     end
-    follow_redirect!
-
+    # follow_redirect!
+    assert_response :success
+    assert_match /<tr class=\\"line-item-highlight/, @response.body
     assert_select 'h2', 'Your Cart'
     assert_select 'td', "Programing Ruby 1.9"  
   end

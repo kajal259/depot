@@ -2,10 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 .store {
-  max-width: 80em;
-	margin-right: -22em;
-	padding-left: 20em;
+  max-width: 32em;
+	margin-right: -57em;
+	padding-left: 34em;
+  margin-top: 10em;
  
+  
 	ul.catalog {
     border-top: solid 0.250em;
     list-style: none;
@@ -13,6 +15,7 @@
     margin: 0;
     margin-right: -46em;
     padding-right: 29em;
+    margin-top: 2em;
     li {
       padding: 1em;
       margin: 0;

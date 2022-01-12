@@ -1,0 +1,5 @@
+cart = document.getElementById("cart")
+cart.innerHTML = "<article><%= j render(@cart) %></article>"
+
+notice = document.getElementById("notice")
+if(notice) notice.style.display = "none"
